@@ -18,4 +18,3 @@ if __name__ == "__main__":
                  .delete(synchronize_session='fetch')
     session.commit()
     session.close()
-

@@ -13,7 +13,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
+
     for i in session.query(State).order_by(State.id).all():
         print(f"{i.id}: {i.name}")
     session.close()
-
