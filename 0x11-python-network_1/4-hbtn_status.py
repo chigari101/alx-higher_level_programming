@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Fetch url using requests module"""
-
 import requests
 
 
