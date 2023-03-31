@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     try:
         r = requests.get(url)
-        r.raise_for_status()
+        r.status_code()
         print(r.text)
     except:
         print('Error code: {}'.format(r.status_code))
